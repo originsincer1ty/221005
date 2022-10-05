@@ -19,7 +19,6 @@
     	})(document);
 	</script>
 
-	<script type="text/javascript" src="main.js" defer></script>
 </head>
 
 <style type="text/css">
@@ -152,6 +151,31 @@
 
 
 	<script type="text/javascript">
+
+		
+		// var sValue1 = ["그는", "그녀는", "농부는", "간호사는", "학생은"];
+		// var text = document.getElementById("ran1")
+		// ran1.textContent = randomItem(sValue1);
+
+		var sValue1 = ["그는", "그녀는", "농부는", "간호사는", "학생은"];
+		let sPick1 = Math.floor(Math.random() * sValue1.length);
+		var text = document.getElementById("ran1");
+			ran1.textContent = sValue1[sPick1];
+
+		let sValue2 = ["가당찮은", "귀찮은", "우울한", "억센", "날카로운", "게으른", "못된", "귀여운"];
+		let sPick2 = Math.floor(Math.random() * sValue2.length);
+		var text = document.getElementById("ran2");
+			ran2.textContent = sValue2[sPick2];
+
+		let sValue3 = ["도시를", "나라를", "고양이를", "햇살을", "사랑을", "동생을"];
+		let sPick3 = Math.floor(Math.random() * sValue3.length);
+		var text = document.getElementById("ran3");
+			ran3.textContent = sValue3[sPick3];
+
+		let sValue4 = ["기피한다", "사랑한다", "그리워한다", "유지한다", "미워한다", "생각한다", "정의한다"];
+		let sPick4 = Math.floor(Math.random() * sValue4.length);
+		var text = document.getElementById("ran4");
+			ran4.textContent = sValue4[sPick4];
 
 	</script>
 </body>
