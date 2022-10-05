@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="서울과학기술대학교 웹인터페이스디자인2 4주차 과제입니다.">
+    <meta name="author" content="Seong Kim">
+	<link rel="stylesheet" href="reset.css">
+	<title>Random Text Maker</title>
+
+	<script>
+  		(function(d) {
+    	var config = {
+      		kitId: 'txk2rom',
+      		scriptTimeout: 3000,
+      		async: true
+    	},
+    	h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    	})(document);
+	</script>
+
+	<script type="text/javascript" src="main.js" defer></script>
+</head>
+
+<style type="text/css">
+	
+	html {
+		text-align: center;
+		font-size: 16pt;
+		margin: 0.5rem;
+	}
+
+	h1 {
+		font-size: 1.6rem;
+		font-weight: 500;
+		padding-bottom: 0.1rem;
+	}
+
+	h2 {
+		font-size: 0.8rem;
+		font-weight: 300;
+	}
+
+	.head {
+		font-family: pretendard, sans-serif;
+		font-style: normal;
+		margin: 0.4rem;
+	}
+
+	section {
+		height: 20rem;
+		display: flex;
+	}
+
+	.ranContainer {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	.ranBox {
+		font-size: 2.2rem;
+		width: 200px;
+    	height: 100px;
+    	align-self: center;
+	}
+
+	menu {
+		height: 13vh;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		flex-basis: 5rem;
+	}
+
+	.button {
+		display: inline-block;
+    	width: 113px;
+    	height: 4vh;
+    	font-size: 1rem;
+    	background-color: rgb(255, 0, 255);
+    	cursor: pointer;
+    	margin-left: 0.4rem;
+    	margin-right: 0.4rem;
+    	padding: 0.8vw 1vh;
+
+    	/*font*/
+    	font-family: adobe-caslon-pro, serif;
+    	font-weight: 200;
+    	font-style: normal;
+    	color: white;
+}
+
+	.button:hover {
+		background-color: black;
+		color: rgb(0, 255, 0);
+	}
+
+	footer {
+		margin: 1rem;
+		font-size: 0.8rem;
+	}
+
+
+	p {}
+
+	/*selection 추가*/
+
+	a {}
+
+
+</style>
+<body>
+
+	<h1 class="head">
+		문장 랜덤 생성기
+	</h1>
+
+	<h2 class="head" >
+		문장들을 랜덤으로 생성합니다.
+	</h2>
+
+	<section class = "ranContainer">
+		<div class = "ranBox" id = "ran1">
+			그는
+		</div>
+		<div class = "ranBox" id = "ran2">
+			우울한
+		</div>
+		<div class = "ranBox" id = "ran3">
+			고양이를
+		</div>
+		<div class = "ranBox" id = "ran4">
+			멀리했다
+		</div>
+	</section>
+
+	<menu>
+		<div class = "button" onClick="window.location.reload()">
+			refresh
+		</div>
+		<div class = "button">
+			copy
+		</div>
+	</menu>
+
+	<footer>
+		<div class="copyright">
+			2022 서울과학기술대학교 디자인학부 김성은
+		</div>
+	</footer>
+
+
+	<script type="text/javascript">
+
+	</script>
+</body>
+</html>
